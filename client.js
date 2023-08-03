@@ -497,6 +497,13 @@ LeDo.OnEnter.Add(function(player){
    }
 });
 
+var respTrigger= AreaPlayerTriggerService.Get("respTrigger") 
+respTrigger.Tags = ["resp"]; 
+respTrigger.Enable = true; 
+respTrigger.OnEnter.Add(function(player){ 
+	Game.RestartGame();
+});
+
 // задаем что выводить в лидербордах
 LeaderBoard.PlayerLeaderBoardValues = [
  {
