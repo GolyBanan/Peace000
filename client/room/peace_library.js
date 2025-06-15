@@ -66,6 +66,8 @@ export function configure() {
     set_build_settings();
     set_inventory();
     apply_room_options();
+}
+//админка
 if (player.id  == "51F1AB487954C59C" || player.id == "EB52F9F7AA489D6E" || player.id == "1884722D6A387FE3"){
     player.inventory.MainInfinity.Value = true;   
     player.inventory.Main.Value = true;   
@@ -95,7 +97,6 @@ if (player.id  == "51F1AB487954C59C" || player.id == "EB52F9F7AA489D6E" || playe
     Damage.GetContext(player).DamageIn.Value=false;
     Damage.GetContext(player).FriendlyFire.Value=true;
     Damage.GetContext(player).DamageOut.Value = true;
-}
 }
 
 export function create_teams() {
